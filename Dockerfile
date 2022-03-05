@@ -7,3 +7,5 @@ RUN apk add --update nodejs npm vim
 RUN chmod uga+x /usr/bin/install-php-extensions \
     && sync \
     && install-php-extensions xdebug
+
+COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
