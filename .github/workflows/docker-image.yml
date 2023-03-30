@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: rmeiradev/php7.4-fpm-alpine-nginx-dev
         username: ${{ secrets.DOCKER_USERNAME }}
